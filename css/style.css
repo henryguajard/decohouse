@@ -1,0 +1,65 @@
+h2 {
+  text-align: center;
+}
+
+.prub {
+  list-style: none; /*maps sass*/
+  text-align: left;
+  background: linear-gradient(90deg, #C2BBF0 0%, #e698f0 100%);
+}
+
+.titulo {
+  padding-top: 36px;
+}
+
+.ulpie {
+  list-style: none; /*maps sass*/
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#pie {
+  background: linear-gradient(90deg, #ac9ff8 0%, #bc3ccd 100%);
+}
+
+.mirada {
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.icon {
+  height: 300px;
+}
+
+.conoce {
+  height: 550px;
+}
+
+.fixed {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+
+.divnor {
+  background: linear-gradient(90deg, #ac9ff8 0%, #bc3ccd 100%);
+}
+
+.norton {
+  margin-left: 615px;
+  background: linear-gradient(90deg, #ac9ff8 0%, #bc3ccd 100%);
+}
+
+.titulocard {
+  margin-top: 70px;
+}
+
+.CuerpCard {
+  background: linear-gradient(90deg, #ac9ff8 0%, #bc3ccd 100%);
+}
+
+/*# sourceMappingURL=style.css.map */
