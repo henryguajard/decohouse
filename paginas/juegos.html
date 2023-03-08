@@ -15,7 +15,7 @@
           <div class="col-sm-2 col-md-2 col-lg-2 ps-4">
             <h1>DecoHouse</h1></div>
             <div class="col-sm-3 col-md-3 col-lg-3 ps-3 ">
-            <a href="../index.html"  class=" colorbotton">      <img class="imgtot" id="principio" src="../imagenes/sofa.png" height="55px" width="80px" alt="icono tottus" class="imagpor"></a>
+            <a href="../index.html"  class=" colorbotton">      <img class="imgIcon" id="icono" src="../imagenes/sofa.png" height="55px" width="80px" alt="icono tottus" class="imagpor"></a>
             </div>
           <div class="container-fluid  mt-5">
             <button type="button" class="navbar-toggler botonnav"  data-bs-toggle="collapse" data-bs-target="#opciones">
@@ -28,11 +28,11 @@
             Tienda
             </a>
             <ul class="dropdown-menu prub">
-              <li><a class="dropdown-item" href="#">Juegos de terrasas</a></li>
+              <li><a class="dropdown-item" href="#">Productos en Stock</a></li>
               <li><a class="dropdown-item" href="../paginas/mesas.html">Mesas</a></li>
               <li><a class="dropdown-item" href="../paginas/sofas.html">Sofas</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Productos en Stock</a></li>
+              <li><a class="dropdown-item" href="#">Juegos de terraza</a></li>
             </ul>
           </li>
           <div class="container-fluid mt-3">
@@ -59,82 +59,54 @@
         </nav>
     </header><!-- fin barra de navegacion de la pagina de todo el proyecto-->
     <div class="titulocard col-sm-12 ">
-        <h2>Conoce nuestros juegos de terrazas</h2>
-     </div>
-    <section class=" container-fluid ">
-       <div class="row ms-5 grid gap-3">
-          <div class="card  ps-3 col-sm-4 border-info CuerpCard " style="width: 24rem; height: 420px;">
-            <img src="../imagenes/slide_2.jpg" width="20rem" height="200px" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card  ps-3 col-sm-4 border-info CuerpCard " style="width: 24rem; height: 420px;">
-            <img src="../imagenes/slide_1.jpg" width="20rem" height="200px" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card  ps-3 col-sm-4 border-info CuerpCard " style="width: 24rem; height: 420px;">
-            <img src="../imagenes/juego-5-piezas-2.jpg" height="200px"  class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-       </div>
-    </section>
-    <section class=" container-fluid mt-3">
-        <div class="row ms-5 grid gap-3">
-           <div class="card  ps-3 col-sm-4 border-info CuerpCard " style="width: 24rem; height: 420px;">
-             <img src="../imagenes/living_cuerda_doble_negra.jpg" width="20rem" height="200px" class="card-img-top" alt="...">
-             <div class="card-body">
-               <h5 class="card-title">Card title</h5>
-               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-               <a href="#" class="btn btn-primary">Go somewhere</a>
-             </div>
-           </div>
-           <div class="card  ps-3 col-sm-4 border-info CuerpCard " style="width: 24rem; height: 420px;">
-             <img src="../imagenes/galeria_living_aluminio_3.jpg" width="20rem" height="200px" class="card-img-top" alt="...">
-             <div class="card-body">
-               <h5 class="card-title">Card title</h5>
-               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-               <a href="#" class="btn btn-primary">Go somewhere</a>
-             </div>
-           </div>
-           <div class="card  ps-3 col-sm-4 border-info CuerpCard " style="width: 24rem; height: 420px;">
-             <img src="../imagenes/living_rattan_pvc_aluminio.jpg" height="200px"  class="card-img-top" alt="...">
-             <div class="card-body">
-               <h5 class="card-title">Card title</h5>
-               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-               <a href="#" class="btn btn-primary">Go somewhere</a>
-             </div>
-           </div>
+      <h2>Conoce nuestros stock de productos</h2>
+      <h4 id="pfiltros">Filtros Por:</h4> 
+      
+   </div>
+    <div class="row"> 
+
+      <div class="left">
+        <div class="filtros"><button type="button" class="btn btn-outline-danger" id="JuegosT">Juegos de terrazas</button>
+          <button type="button" class="btn btn-outline-danger" id="Mesas">Mesas</button>
+          <button type="button" class="btn btn-outline-danger" id="Sofas">Sofas</button>
         </div>
-     </section>
-     <article class="container-fluid mt-5 ">
+       
+    </div>
+    
+    <div id="CardsDeccoHouse" class="tarjetas  ms-1 grid gap-3 "></div>
+    </div>
+        
+       
+     
+  
+     
+
+
+
+   
+   
+     <article class="container-fluid mt-5">
         <div class="row icon">
-          <div class="col-sm-3 ">
-            <p>Lorem ipsum, dolor</p>
-            <img src="../imagenes/mueble.png" height="100px" width="100px" alt="">
+          <div class="col-sm-3 " >
+            <div id="container_HechoCHile"></div>
+    
+            <img src="../imagenes/mueble.png" height="100px" width="100px" id="hechoEnCHile" alt="">
     
           </div>
-          <div class="col-sm-3 ">
-            <p>Lorem ipsum, dolor</p>
-            <img src="../imagenes/trabajo-en-equipo.png" height="100px" width="100px" alt="">
+          <div class="col-sm-3 container_fabricado ">
+            <div id="container_fabricado"></div>
+            
+            <img src="../imagenes/trabajo-en-equipo.png" height="100px" width="100px" id="fabricadoAMano" alt="">
           </div>
           <div class="col-sm-3 ">
-            <p>Lorem ipsum, dolor</p>
-            <img src="../imagenes/garantia.png" height="100px" width="100px" alt="">
+            <div id="container_12Meses"></div>
+           
+            <img src="../imagenes/garantia.png" height="98px" width="100px" id="12Meses" alt="">
           </div>
           <div class="col-sm-3 ">
-            <p>Lorem ipsum, dolor</p>
-            <img src="../imagenes/entrega-urgente.png" height="100px" width="100px" alt="">
+            <div id="container_Despacho48"></div>
+            
+            <img src="../imagenes/entrega-urgente.png" height="100px" width="100px" id="Despacho48H" alt="">
           </div>
     
         </div>
@@ -175,6 +147,8 @@
            <a href="#principio"><img class="fixed"  src="../imagenes/whatsapp.png" height="36px" width="36px" alt=""></a></div>
         </div>
       </footer>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="../js/main.js"></script>
       <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> 
 </body>

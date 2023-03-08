@@ -44,6 +44,41 @@ h2{
     height: 300px;
    
 }
+.imgIcon:hover{
+    border-radius: 2px;
+  transform: scale(1.1,1.1);
+  transition: all 400ms ease;
+
+}
+.pHechoCHile{
+   
+    display: none;
+}
+.pHechoCHile1{
+font-size: larger;
+
+color: #ac9ff8;
+
+}
+.filtros{
+    height: 20px;
+}
+
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+    height: auto;
+    width: auto;
+}
+
+.left{
+height: 200px;
+
+}
+
 .conoce{
     height: 550px;
 }
