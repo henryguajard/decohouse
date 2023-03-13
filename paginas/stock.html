@@ -7,7 +7,7 @@
     <link rel="icon" href="../imagenes/sofa.png">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Juegos de terrazas DH</title>
+    <title>Stock de Productos DH</title>
 </head>
 <body>
     <header class=" container-fluid" id="head" ><!--barra de navegacion de la pagina de todo el proyecto-->
@@ -29,10 +29,8 @@
             </a>
             <ul class="dropdown-menu prub">
               <li><a class="dropdown-item" href="#">Productos en Stock</a></li>
-              <li><a class="dropdown-item" href="../paginas/mesas.html">Mesas</a></li>
-              <li><a class="dropdown-item" href="../paginas/sofas.html">Sofas</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Juegos de terraza</a></li>
+            
+              
             </ul>
           </li>
           <div class="container-fluid mt-3">
@@ -43,19 +41,19 @@
             Conocenos
             </a>
             <ul class="dropdown-menu prub">
-              <li><a class="dropdown-item" href="#">Quienes somos</a></li>
-              <li><a class="dropdown-item" href="#">Nuestra vision</a></li>
+              <li><a class="dropdown-item" href="./quienes.html">Quienes somos</a></li>
+           
             </ul>
           </div>
           <ul class="">
             <li class="nav-item dropdown-item">
-              <a class="nav-link gale" href="#">Galeria</a>
+              <a class="nav-link gale" href="./galeria.html">Galeria</a>
             </li>
           </ul>
           <div class="carro">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="46px" height="26" fill="currentColor" class="bi bi-cart3" id="iconoCarro" viewBox="0 0 16 16">
               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-            </svg></div>
+            </svg> <span id="icContarcarrito" class="icContarcarrito"></span></div>
         </nav>
     </header><!-- fin barra de navegacion de la pagina de todo el proyecto-->
     <div class="titulocard col-sm-12 ">
@@ -66,9 +64,9 @@
     <div class="row"> 
 
       <div class="left">
-        <div class="filtros"><button type="button" class="btn btn-outline-danger" id="JuegosT">Juegos de terrazas</button>
-          <button type="button" class="btn btn-outline-danger" id="Mesas">Mesas</button>
-          <button type="button" class="btn btn-outline-danger" id="Sofas">Sofas</button>
+        <div class="filtros"><button type="button" class=" colorbotton" id="JuegosT"><a class="btn colorbotton ">Juegos de terrazas</a></button>
+          <button type="button" class=" colorbotton" id="Mesas"><a class="btn colorbotton ">Mesas</a></button>
+          <button type="button" class=" colorbotton" id="Sofas"><a class="btn colorbotton ">Sofas</a></button>
         </div>
        
     </div>
@@ -76,7 +74,8 @@
     <div id="CardsDeccoHouse" class="tarjetas  ms-1 grid gap-3 "></div>
     </div>
         
-       
+    <div id="containerCarrito" class="containerCarrito"></div>   
+ 
      
   
      
@@ -148,6 +147,7 @@
         </div>
       </footer>
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="../js/productos.js"></script> 
       <script src="../js/main.js"></script>
       <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> 

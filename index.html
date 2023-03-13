@@ -15,7 +15,7 @@
           <div class="col-sm-2 col-md-2 col-lg-2 ps-4">
             <h1>DecoHouse</h1></div>
             <div class="col-sm-3 col-md-3 col-lg-3 ps-3 ">
-            <img class="imgIcon" id="icono" src="imagenes/sofa.png" height="55px" width="80px" alt="icono tottus" class="imagpor">
+            <img class="imgIcon" id="icono" src="imagenes/sofa.png" height="55px" width="80px" alt="icono " class="imagpor">
             </div>
           <div class="container-fluid  mt-5">
             <button type="button" class="navbar-toggler botonnav"  data-bs-toggle="collapse" data-bs-target="#opciones">
@@ -28,11 +28,10 @@
             Tienda
             </a>
             <ul class="dropdown-menu prub">
-              <li><a class="dropdown-item nav-item" href="./paginas/juegos.html">Productos en Stock</a></li>
-              <li><a class="dropdown-item" href="./paginas/mesas.html">Mesas</a></li>
-              <li><a class="dropdown-item" href="./paginas/sofas.html">Sofas</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Juegos de terrasas</a></li>
+              <li><a class="dropdown-item nav-item" href="./paginas/stock.html">Productos en Stock</a></li>
+
+             
+            
             </ul>
           </li>
           <div class="container-fluid mt-3">
@@ -43,19 +42,20 @@
             Conocenos
             </a>
             <ul class="dropdown-menu prub">
-              <li><a class="dropdown-item" href="#">Quienes somos</a></li>
-              <li><a class="dropdown-item" href="#">Nuestra vision</a></li>
+              <li><a class="dropdown-item" href="./paginas/quienes.html">Quienes somos</a></li>
             </ul>
           </div>
           <ul class="">
             <li class="nav-item dropdown-item">
-              <a class="nav-link gale" href="#">Galeria</a>
+              <a class="nav-link gale" href="./paginas/galeria.html">Galeria</a>
             </li>
           </ul>
-          <div class="carro">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+         
+
+          <!--segunda seccion  <div class="carro">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart3" id="iconoCarro" viewBox="0 0 16 16">
             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-          </svg></div>
+          </svg><span id="icContarcarrito" class="icContarcarrito"></span></div>-->
         </nav>
     </header><!-- fin barra de navegacion de la pagina de todo el proyecto-->
     <section class="Sec1">
@@ -76,27 +76,27 @@
         <div class=" container-fluid pro01 mirada"><!--contenido productos-->
          <div class="row ">
           <div class="col-sm-4 --bs-gap: 3rem nosotros borderin">
-            <h4 class="h4pro">Juego de terrazas</h4>
+            <h4 class="h4pro"> Terrazas</h4>
             <p class="propygif">Centralizamos la compra y gestionamos venta de volumen simplificando tu logistica de compra. Entregamos tu compra donde tú lo necesitas o en cualquiera de nuestras tiendas a nivel nacional,
             garantizando la calidad de nuestro productos nacionales e importados.</p>
              <div mt-5>
-             <a href="./paginas/juegos.html"  class="btn colorbotton">Conocelos aqui</a></div>
+            <button  class=" colorbotton "><a href="./paginas/stock.html" class="btn colorbotton ">Conocelos aqui</a></button> </div>
           </div>
           <div class="col-sm-4 --bs-gap: 3rem nosotros borderin">
             <h4 class="h4pro">Mesas</h4>
             <p class="propygif">Centralizamos la compra y gestionamos venta de volumen simplificando tu logistica de compra. Entregamos tu compra donde tú lo necesitas o en cualquiera de nuestras tiendas a nivel nacional,
             garantizando la calidad de nuestro productos nacionales e importados.</p>
              <div mt-5>
-             <a href="./paginas/mesas.html"  class="btn colorbotton">Conocelos aqui</a></div>
+            <button  class=" colorbotton "><a href="./paginas/stock.html"  class="btn colorbotton ">Conocelos aqui</a></button> </div>
           </div>
              <div class="col-sm-4 --bs-gap: 3rem nosotros borderin">
                <h4 class="h4pro">Sofas"</h4>
                <p class="propygif">Medio de pago que otorga mayor flexibilidad para tus colaboradores. Podemos entregar Gift Card físicas y digitales. 
                Perfectas para premiar a colaboradores por productividad y/o festividades.
-               Nuestras Gift Cards cuentan con una vigencia de hasta 2 años y pueden ser personalizables según la necesidad u ocasión
+               Nuestras Gift Cards cuentan colaboradores por productividad
                </p>
               <div>
-               <a href="./paginas/sofas.html"  class="btn  colorbotton">Conocelos aqui</a>
+               <button class="  colorbotton"><a href="./paginas/stock.html"  class="btn colorbotton ">Conocelos aqui</a></button> 
               </div>
              </div>
           </div>
@@ -194,6 +194,7 @@
 
 
   <!-- JavaScript Bundle with Popper -->
+<script src="./js/productos.js"></script> 
 <script src="./js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>  
 </body>
