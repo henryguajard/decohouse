@@ -20,3 +20,4 @@ const productosDeccoHouse =[
 {id : 08, nombre: `Sofa Kunza`,img : "../imagenes/sofa02.webp", precio: 399990, cantidad: 1},
 {id : 09, nombre: `Sofa Essential`,img : "../imagenes/sofa03.jpg", precio: 299990, cantidad: 1}
 ];
+//.json tranformar 

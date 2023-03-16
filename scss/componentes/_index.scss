@@ -34,12 +34,13 @@ h2{
     background: linear-gradient(90deg, #ac9ff8 0%,#bc3ccd   100%);
 }
 .mirada{
-    height: 550px;
+   
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-   
+    justify-content: center;
+    
 }
+
 .icon{
     height: 300px;
    
@@ -101,9 +102,17 @@ margin-left: 615px;
 }
 
 .colorbotton {
-    background-color:#b669c1 ;
-    border-color: #ac9ff8;
-border-radius: 6px ;
+    border-radius: 3px;
+    border: none;
+    text-transform: uppercase;
+      outline: 0;
+      padding: 10px;
+      background: linear-gradient(90deg, #ac9ff8 0%, #2c0232  100%);
+      text-align: center;
+      transition: color 0.2s linear;
+      cursor: pointer;
+      width: 100%;
+    font-size: 15px;
 }
 .titulocard{
     margin-top: 70px;
@@ -185,9 +194,9 @@ cursor: pointer;
     margin: 10px;
 }
 .bodyCarrito img{
-    margin-right: 60px;
+    margin-right: 0px;
     height: 120px;
-    width: 260px;
+    width: 160px;
 }
 .contenerTotalCarrito{
     font-size: 25px;
@@ -213,6 +222,27 @@ display: none;
 
 };
 .eliminarCarrito{
-    margin-left: 100px;
-    margin-right: 0px;
+    margin-left: 0px;
+    
+}
+
+.contenedorcardindex{
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorcardindex.cardindex{
+    height: 250px;
+    width: 200px;
+    background-color: #ac9ff8;
+    border-radius: 10%;
+    box-shadow: 16px 14px 20px #44424c;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

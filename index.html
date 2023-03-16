@@ -64,43 +64,45 @@
            <div class="col-sm-4  " >
             <h3 class="mt-5 imgIcon"> Diseñamos tus muebles
                               100% <br> A tu medida  </h3>
+           <div id="timeout"></div>
            
            </div>
           <div class="col-sm-8" >
-            <img src="./imagenes/decoracion-sillones.jpg" width="800px" alt="">
+            <img   data-aos="zoom-in-up" src="./imagenes/decoracion-sillones.jpg" width="800px" alt="">
           </div>
          </div>
         </div>
     </section>
     <section class="Sec1"><!--segunda seccion-->
-        <div class=" container-fluid pro01 mirada"><!--contenido productos-->
+        <div class=" container-fluid pro01  mirada" ><!--contenido productos-->
          <div class="row ">
-          <div class="col-sm-4 --bs-gap: 3rem nosotros borderin">
-            <h4 class="h4pro"> Terrazas</h4>
-            <p class="propygif">Centralizamos la compra y gestionamos venta de volumen simplificando tu logistica de compra. Entregamos tu compra donde tú lo necesitas o en cualquiera de nuestras tiendas a nivel nacional,
-            garantizando la calidad de nuestro productos nacionales e importados.</p>
+          <div class="col-sm-4  border border-danger-subtle" >
+            <h3 class="h4pro "> Terrazas</h3>
+            <p class="propygif">Centralizamos la compra y gestionamos venta de volumen simplificando tu logistica de compra. Entregamos tu compra.</p>
              <div mt-5>
-            <button  class=" colorbotton "><a href="./paginas/stock.html" class="btn colorbotton ">Conocelos aqui</a></button> </div>
+            <button  class="  botoncard"><a href="./paginas/stock.html" class="btn ">Conocelos aqui</a></button> </div>
           </div>
-          <div class="col-sm-4 --bs-gap: 3rem nosotros borderin">
-            <h4 class="h4pro">Mesas</h4>
-            <p class="propygif">Centralizamos la compra y gestionamos venta de volumen simplificando tu logistica de compra. Entregamos tu compra donde tú lo necesitas o en cualquiera de nuestras tiendas a nivel nacional,
-            garantizando la calidad de nuestro productos nacionales e importados.</p>
+          <div class="col-sm-4 --bs-gap: 3rem nosotros borderin border border-dark-subtle">
+            <h3 class="h4pro">Mesas</h3>
+            <p class="propygif">Centralizamos la compra y gestionamos venta de volumen simplificando tu logistica de compra. Entregamos tu compra.</p>
              <div mt-5>
-            <button  class=" colorbotton "><a href="./paginas/stock.html"  class="btn colorbotton ">Conocelos aqui</a></button> </div>
+            <button  class=" colorbotton botoncard"><a href="./paginas/stock.html"  class="btn colorbotton ">Conocelos aqui</a></button> </div>
           </div>
-             <div class="col-sm-4 --bs-gap: 3rem nosotros borderin">
-               <h4 class="h4pro">Sofas"</h4>
+             <div class="col-sm-4  nosotros borderin border border-dark-subtle">
+               <h3 class="h4pro">Sofas</h3>
                <p class="propygif">Medio de pago que otorga mayor flexibilidad para tus colaboradores. Podemos entregar Gift Card físicas y digitales. 
-               Perfectas para premiar a colaboradores por productividad y/o festividades.
-               Nuestras Gift Cards cuentan colaboradores por productividad
+                nivel nacional.
                </p>
               <div>
-               <button class="  colorbotton"><a href="./paginas/stock.html"  class="btn colorbotton ">Conocelos aqui</a></button> 
+               <button class="  colorbotton botoncard"><a href="./paginas/stock.html"  class="btn colorbotton ">Conocelos aqui</a></button> 
               </div>
              </div>
           </div>
         </div>
+
+        
+
+        
     </section>
     <div class="titulocard col-sm-12 ">
       <h2>Conoce nuestros productos</h2>
@@ -108,16 +110,16 @@
    <article class="container-fluid ">
      <div class="row conoce">
       <div class="col-sm-4 container-pro"> 
-        <img class="none imgvar" src="./imagenes/SIENA3CPACERO_5_1024x1024.webp" height="200px" width="370px" alt="surtido de productos">
-       <img class="none imgvar" src="./imagenes/sofa01.jpg" height="200px" width="370px" alt="surtido de productos">
+        <img class="none imgvar imgIcon"  id="icono" src="./imagenes/SIENA3CPACERO_5_1024x1024.webp" height="200px" width="370px" alt="surtido de productos">
+       <img class="none imgvar imgIcon" id="icono" src="./imagenes/sofa01.jpg" height="200px" width="370px" alt="surtido de productos">
      </div>
       <div class="col-sm-4 container-pro">
-        <img class="imgvar" src="./imagenes/mesa01.jpeg" height="200px" width="370px" alt="surtido productos 02">
-       <img class="imgvar" src="./imagenes/mesa02.jpg" height="200px" width="370px" alt="surtido productos 02">
+        <img class="imgvar  imgIcon" id="icono" src="./imagenes/mesa01.jpeg" height="200px" width="370px" alt="surtido productos 02">
+       <img class="imgvar  imgIcon" id="icono" src="./imagenes/mesa02.jpg" height="200px" width="370px" alt="surtido productos 02">
       </div>
       <div class="col-sm-4 container-pro">
-        <img class="imgvar" src="./imagenes/slide_2.jpg" height="200px" width="370px" alt="surtido productos 02">
-       <img class="imgvar" src="./imagenes/terraza01.jpg" height="200px" width="370px" alt="surtido productos 02">
+        <img class="imgvar  imgIcon" src="./imagenes/slide_2.jpg" height="200px" width="370px" alt="surtido productos 02">
+       <img class="imgvar  imgIcon" src="./imagenes/terraza01.jpg" height="200px" width="370px" alt="surtido productos 02">
       </div>
      </div>
    </article>
@@ -194,8 +196,12 @@
 
 
   <!-- JavaScript Bundle with Popper -->
+  
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./js/index.js"></script> 
 <script src="./js/productos.js"></script> 
 <script src="./js/main.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>  
 </body>
 </html>

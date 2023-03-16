@@ -56,20 +56,34 @@
             </svg> <span id="icContarcarrito" class="icContarcarrito"></span></div>
         </nav>
     </header><!-- fin barra de navegacion de la pagina de todo el proyecto-->
-    <div class="titulocard col-sm-12 ">
-      <h2>Conoce nuestros stock de productos</h2>
-      <h4 id="pfiltros">Filtros Por:</h4> 
-      
-   </div>
-    <div class="row"> 
+   
+ 
 
-      <div class="left">
-        <div class="filtros"><button type="button" class=" colorbotton" id="JuegosT"><a class="btn colorbotton ">Juegos de terrazas</a></button>
-          <button type="button" class=" colorbotton" id="Mesas"><a class="btn colorbotton ">Mesas</a></button>
-          <button type="button" class=" colorbotton" id="Sofas"><a class="btn colorbotton ">Sofas</a></button>
-        </div>
-       
-    </div>
+
+    <div class=" container-fluid pro01  mirada" ><!--contenido productos-->
+      <div class="row ">
+        <h2>Conoce nuestros stock de productos</h2>
+        <h2 id="pfiltros">Filtros Por:</h2> 
+       <div class="col-sm-4  border border-danger-subtle" >
+         <h3 class="h4pro "> Exteriores</h3>
+         
+          <div mt-5>
+         <button type="button" class=" botoncard " id="JuegosT"><a class="btn " >Terrazas</a></button> </div>
+       </div>
+       <div class="col-sm-4 --bs-gap: 3rem nosotros borderin border border-dark-subtle">
+         <h3 class="h4pro">Mesas exclusivas</h3>
+
+          <div mt-5>
+         <button  class=" colorbotton botoncard" id="Mesas"><a  class="btn colorbotton ">Mesas</a></button> </div>
+       </div>
+          <div class="col-sm-4  nosotros borderin border border-dark-subtle">
+            <h3 class="h4pro">Lo que necesita tu living</h3>
+           <div>
+            <button class="colorbotton botoncard" id="Sofas"><a class="btn colorbotton ">Sofas</a></button> 
+           </div>
+          </div>
+       </div>
+     </div>
     
     <div id="CardsDeccoHouse" class="tarjetas  ms-1 grid gap-3 "></div>
     </div>
@@ -148,7 +162,9 @@
       </footer>
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <script src="../js/productos.js"></script> 
+      
       <script src="../js/main.js"></script>
+      <script src="../js/carrito.js"></script>
       <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> 
 </body>
