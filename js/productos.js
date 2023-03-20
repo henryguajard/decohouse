@@ -20,4 +20,26 @@ const productosDeccoHouse =[
 {id : 08, nombre: `Sofa Kunza`,img : "../imagenes/sofa02.webp", precio: 399990, cantidad: 1},
 {id : 09, nombre: `Sofa Essential`,img : "../imagenes/sofa03.jpg", precio: 299990, cantidad: 1}
 ];
-//.json tranformar 
+
+
+function mensajeAgregadoHenry()  {
+    Swal.fire({
+      title: 'Desarrollador Henry Guajardo!',
+      text: ' visitame en github.com/henryguajard',
+      imageUrl: 'https://lh3.googleusercontent.com/a/AGNmyxbLaJIZ0pQlTQJ-tQKA9WVsFAVuBdAe0H9EcCBakHE=s288',
+      imageWidth: 200,
+      imageHeight: 200,
+      imageAlt: 'Custom image',
+    })
+
+
+  }   
+//Github realizador del proyecto github.com/henryguajard
+  const mensajeHenry = document.querySelector(`#mensajeHenry`);
+  mensajeHenry.addEventListener("click" ,() => {
+    console.log(mensajeHenry);
+    mensajeAgregadoHenry();
+
+
+
+  });

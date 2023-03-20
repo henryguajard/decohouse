@@ -5,10 +5,6 @@ const IconoConteoC =document.querySelector("#icContarcarrito")
 
 
 
-
-
-
-
  const verCarrito = () =>{
 containerCarrito.innerHTML = ""
 containerCarrito.style.display = "flex"//meter stilo css
@@ -36,7 +32,7 @@ headCarrito.append(cerrarCarrito);
 //fin header carrito div + x cerrar carrito
 // con reduce sumamos el precio de los productos seleccionados
 const totalCarrito = carrito.reduce((acumula,e) => acumula + e.precio * e.cantidad, 0);
-//
+
 const contenerTotalCarrito = document.createElement("footer");
 contenerTotalCarrito.className ="contenerTotalCarrito";
 contenerTotalCarrito.innerHTML =`

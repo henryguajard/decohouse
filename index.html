@@ -11,11 +11,11 @@
 </head>
 <body>
     <header class=" container-fluid" id="head" ><!--barra de navegacion de la pagina de todo el proyecto-->
-        <nav class=" prub navbar navbar-expand-md navbar   fixed-top">
+        <nav class=" nav01 prub navbar navbar-expand-md navbar   fixed-top">
           <div class="col-sm-2 col-md-2 col-lg-2 ps-4">
             <h1>DecoHouse</h1></div>
             <div class="col-sm-3 col-md-3 col-lg-3 ps-3 ">
-            <img class="imgIcon" id="icono" src="imagenes/sofa.png" height="55px" width="80px" alt="icono " class="imagpor">
+            <img class="imgIcon imgdecco" id="icono" src="imagenes/sofa.png" height="55px" width="80px" alt="icono " class="imagpor">
             </div>
           <div class="container-fluid  mt-5">
             <button type="button" class="navbar-toggler botonnav"  data-bs-toggle="collapse" data-bs-target="#opciones">
@@ -29,46 +29,31 @@
             </a>
             <ul class="dropdown-menu prub">
               <li><a class="dropdown-item nav-item" href="./paginas/stock.html">Productos en Stock</a></li>
-
-             
-            
             </ul>
           </li>
           <div class="container-fluid mt-3">
           </div>
          <div class="col hamburg collapse navbar-collapse" id="opciones">
            <li class="nav-item dropdown">
-            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown" href="#" id="clickAppi" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Conocenos
             </a>
             <ul class="dropdown-menu prub">
               <li><a class="dropdown-item" href="./paginas/quienes.html">Quienes somos</a></li>
             </ul>
           </div>
-          <ul class="">
-            <li class="nav-item dropdown-item">
-              <a class="nav-link gale" href="./paginas/galeria.html">Galeria</a>
-            </li>
-          </ul>
-         
-
-          <!--segunda seccion  <div class="carro">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart3" id="iconoCarro" viewBox="0 0 16 16">
-            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-          </svg><span id="icContarcarrito" class="icContarcarrito"></span></div>-->
         </nav>
     </header><!-- fin barra de navegacion de la pagina de todo el proyecto-->
     <section class="Sec1">
         <div class="container-fluid mt-5" >
          <div class="row d-flex justify-content-center ps-3 titulo">
            <div class="col-sm-4  " >
-            <h3 class="mt-5 imgIcon"> Diseñamos tus muebles
+            <h3 class="mt-5 titulo imgIcon"> Diseñamos tus muebles
                               100% <br> A tu medida  </h3>
            <div id="timeout"></div>
-           
            </div>
           <div class="col-sm-8" >
-            <img   data-aos="zoom-in-up" src="./imagenes/decoracion-sillones.jpg" width="800px" alt="">
+            <img   data-aos="zoom-in-up" class="imgm" src="./imagenes/decoracion-sillones.jpg" width="800px" alt="">
           </div>
          </div>
         </div>
@@ -84,25 +69,20 @@
           </div>
           <div class="col-sm-4 --bs-gap: 3rem nosotros borderin border border-dark-subtle">
             <h3 class="h4pro">Mesas</h3>
-            <p class="propygif">Centralizamos la compra y gestionamos venta de volumen simplificando tu logistica de compra. Entregamos tu compra.</p>
+            <p class="propygif">Nos sentimos profundamente orgullosos del trabajo artesanal y manual que hay detrás de cada producto.</p>
              <div mt-5>
-            <button  class=" colorbotton botoncard"><a href="./paginas/stock.html"  class="btn colorbotton ">Conocelos aqui</a></button> </div>
+            <button  class="  botoncard"><a href="./paginas/stock.html"  class="btn  ">Conocelos aqui</a></button> </div>
           </div>
              <div class="col-sm-4  nosotros borderin border border-dark-subtle">
                <h3 class="h4pro">Sofas</h3>
-               <p class="propygif">Medio de pago que otorga mayor flexibilidad para tus colaboradores. Podemos entregar Gift Card físicas y digitales. 
-                nivel nacional.
+               <p class="propygif">Cada mueble entregado es elaborado con la misma pasión, precisión y destreza con el fin de crear algo.
                </p>
               <div>
-               <button class="  colorbotton botoncard"><a href="./paginas/stock.html"  class="btn colorbotton ">Conocelos aqui</a></button> 
+               <button class="botoncard"><a href="./paginas/stock.html"  class="btn">Conocelos aqui</a></button> 
               </div>
              </div>
           </div>
-        </div>
-
-        
-
-        
+        </div>   
     </section>
     <div class="titulocard col-sm-12 ">
       <h2>Conoce nuestros productos</h2>
@@ -110,48 +90,39 @@
    <article class="container-fluid ">
      <div class="row conoce">
       <div class="col-sm-4 container-pro"> 
-        <img class="none imgvar imgIcon"  id="icono" src="./imagenes/SIENA3CPACERO_5_1024x1024.webp" height="200px" width="370px" alt="surtido de productos">
-       <img class="none imgvar imgIcon" id="icono" src="./imagenes/sofa01.jpg" height="200px" width="370px" alt="surtido de productos">
+        <img class=" imgvar cerrarCarrito imgIcon"  id="icono" src="./imagenes/SIENA3CPACERO_5_1024x1024.webp" height="200px" width="370px" alt="surtido de productos">
+       <img class="none imgvar cerrarCarrito  imgIcon" id="icono" src="./imagenes/sofa01.jpg" height="200px" width="370px" alt="surtido de productos">
      </div>
       <div class="col-sm-4 container-pro">
-        <img class="imgvar  imgIcon" id="icono" src="./imagenes/mesa01.jpeg" height="200px" width="370px" alt="surtido productos 02">
-       <img class="imgvar  imgIcon" id="icono" src="./imagenes/mesa02.jpg" height="200px" width="370px" alt="surtido productos 02">
+        <img class="imgvar none cerrarCarrito imgIcon" id="icono" src="./imagenes/mesa01.jpeg" height="200px" width="370px" alt="surtido productos 02">
+       <img class="imgvar cerrarCarrito imgIcon" id="icono" src="./imagenes/mesa02.jpg" height="200px" width="370px" alt="surtido productos 02">
       </div>
       <div class="col-sm-4 container-pro">
-        <img class="imgvar  imgIcon" src="./imagenes/slide_2.jpg" height="200px" width="370px" alt="surtido productos 02">
-       <img class="imgvar  imgIcon" src="./imagenes/terraza01.jpg" height="200px" width="370px" alt="surtido productos 02">
+        <img class="imgvar cerrarCarrito imgIcon" src="./imagenes/slide_2.jpg" height="200px" width="370px" alt="surtido productos 02">
+       <img class="imgvar none cerrarCarrito imgIcon" src="./imagenes/terraza01.jpg" height="200px" width="370px" alt="surtido productos 02">
       </div>
      </div>
    </article>
    <article class="container-fluid ">
-    <div class="row icon">
+    <div class="row icon containerow">
       <div class="col-sm-3 " >
         <div id="container_HechoCHile"></div>
-
-        <img src="./imagenes/mueble.png" height="100px" width="100px" id="hechoEnCHile" alt="">
-
+        <img src="./imagenes/mueble.png" height="100px" width="100px" class="cerrarCarrito miniIcono"  id="hechoEnCHile" alt="">
       </div>
       <div class="col-sm-3 container_fabricado ">
         <div id="container_fabricado"></div>
-        
-        <img src="./imagenes/trabajo-en-equipo.png" height="100px" width="100px" id="fabricadoAMano" alt="">
+        <img src="./imagenes/trabajo-en-equipo.png" class="cerrarCarrito miniIcono" height="100px" width="100px" id="fabricadoAMano" alt="">
       </div>
       <div class="col-sm-3 ">
         <div id="container_12Meses"></div>
-       
-        <img src="./imagenes/garantia.png" height="98px" width="100px" id="12Meses" alt="">
+        <img src="./imagenes/garantia.png" class="cerrarCarrito miniIcono" height="98px" width="100px" id="12Meses" alt="">
       </div>
       <div class="col-sm-3 ">
-        <div id="container_Despacho48"></div>
-        
-        <img src="./imagenes/entrega-urgente.png" height="100px" width="100px" id="Despacho48H" alt="">
+        <div id="container_Despacho48"></div> 
+        <img src="./imagenes/entrega-urgente.png" class="cerrarCarrito miniIcono" height="100px" width="100px" id="Despacho48H" alt="">
       </div>
-
     </div>
    </article>
-
-
-
     <footer id="pie"><!--pie de pagina de todo el proyecto-->
         <div class="container-fluid">
          <div class="row ">
@@ -183,7 +154,7 @@
          </div>
          <div class="divnor">
          <a target="_blank" href="https://cl.norton.com/" ><img class="norton" src="https://images.falabella.com/v3/assets/blt7c5c2f2f888a7cc3/blt7a6d6b2fa47c3d34/6102dde661f38746a577ab06/norton-svg-rebranding-desktop.svg" height="78px" width="92px" alt="">
-           <a href="#principio"><img class="fixed"  src="./imagenes/whatsapp.png" height="36px" width="36px" alt=""></a></div>
+           <a ><img class="fixed cerrarCarrito"  id="mensajeHenry" src="./imagenes/github.png" height="60px" width="60px" alt=""></a></div>
         </div>
       </footer>
 
@@ -201,7 +172,6 @@
 <script src="./js/index.js"></script> 
 <script src="./js/productos.js"></script> 
 <script src="./js/main.js"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>  
 </body>
 </html>

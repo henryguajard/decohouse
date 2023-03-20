@@ -1,5 +1,37 @@
+@media screen and (max-width: 576px) {
+  h1 {
+    display: inline;
+    text-align: center;
+    font-size: 355% !important;
+    font-weight: 300 !important;
+    width: 90%;
+    padding-right: 55px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .imgdecco {
+    width: 35%;
+    height: 10%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav01 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+}
+
 h2 {
   text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .fixed-top {
+    position: relative !important;
+  }
 }
 
 .prub {
@@ -23,6 +55,34 @@ h2 {
 .titulo {
   padding-top: 36px;
 }
+@media screen and (max-width: 576px) {
+  .titulo {
+    padding-top: 0px;
+    font-size: 130% !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .imgm {
+    width: 95%;
+    height: 90%;
+  }
+}
+
+.none {
+  border: 1px;
+}
+@media screen and (max-width: 576px) {
+  .none {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .containerRow {
+    width: 0%;
+  }
+}
 
 .ulpie {
   list-style: none; /*maps sass*/
@@ -40,11 +100,15 @@ h2 {
   height: 550px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.realiz {
+  text-align: left;
 }
 
 .icon {
-  height: 300px;
+  height: 350px;
 }
 
 .imgIcon:hover {
@@ -102,9 +166,9 @@ h2 {
 }
 
 .colorbotton {
-  background-color: #b669c1;
-  border-color: #ac9ff8;
-  border-radius: 6px;
+  border: none;
+  background: linear-gradient(90deg, #ac9ff8 0%, #bc3ccd 100%);
+  cursor: pointer;
 }
 
 .titulocard {
@@ -113,6 +177,7 @@ h2 {
 
 .CuerpCard {
   background: linear-gradient(90deg, #ac9ff8 0%, #bc3ccd 100%);
+  color: aliceblue;
 }
 
 .botoncard {
@@ -127,6 +192,18 @@ h2 {
   cursor: pointer;
   width: 100%;
   font-size: 15px;
+}
+
+.spacioConocenos {
+  display: flex;
+  height: 120px;
+  width: 100%;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .botoncard:hover {
@@ -152,6 +229,11 @@ h2 {
   z-index: 9;
   top: 12vh;
   scrollbar-color: none;
+}
+@media screen and (max-width: 576px) {
+  #containerCarrito {
+    width: 40%;
+  }
 }
 
 #containerCarrito::before {
@@ -191,9 +273,9 @@ h2 {
 }
 
 .bodyCarrito img {
-  margin-right: 60px;
+  margin-right: 0px;
   height: 120px;
-  width: 260px;
+  width: 160px;
 }
 
 .contenerTotalCarrito {
@@ -221,8 +303,28 @@ h2 {
 }
 
 .eliminarCarrito {
-  margin-left: 100px;
-  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.contenedorcardindex {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedorcardindex.cardindex {
+  height: 250px;
+  width: 200px;
+  background-color: #ac9ff8;
+  border-radius: 10%;
+  box-shadow: 16px 14px 20px #44424c;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

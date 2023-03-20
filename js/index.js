@@ -8,8 +8,7 @@ function mensajeAgregadop(){
 setTimeout(() => {
    
     mensajeAgregadop ();
+ }, 4000);
 
  
-      
-    }, 4000);
-    //cambiar icono de wasap por icono correo y ponerle un suit aler con mi correo pendiente
+

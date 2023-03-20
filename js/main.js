@@ -17,6 +17,12 @@ function mensajeAgregado(){
         
       );}
 
+
+
+    
+      
+
+
 //agregar evento al icono de DeccoHouse
 const icono = document.getElementById("icono");
 const imgIcon =document.getElementsByClassName("imgIcon");
@@ -129,43 +135,6 @@ const container_Despacho48 = document.getElementById("container_Despacho48");
 container_Despacho48.innerHTML = "<p><b>¡Desp 48H habiles!</b> </p>"
 container_Despacho48.className = "pHechoCHile"
 
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////
-//mostrar stock de productos DeccoHouse
-/* let CardsDeccoHouse = document.querySelector(`#CardsDeccoHouse`);
-fetch(`./data.json`)
-.then((Response) => Response.json())
-.then((Response) =>{
-Response.forEach((item) =>{
-let div = document.createElement("div");
-div.innerHTML =`
-<div class="card  divnor " style="width: 18rem; height: 350px">
-  <img src="${item.img}" class="card-img-top" style="width: 17rem; height: 120px" alt="${item.id}">
-  <div class="card-body">
-    <h5 class="card-title">${item.nombre}</h5>
-  </div>
-  <ul class="list-group  ">
-    <li class="list-group-item divnor "> Precio ${item.precio}</li>
-    <li class="list-group-item divnor ">Cant ${item.cantidad}</li>
-   
-  </ul>
-  <div class="card-body">
-
-  
-  </div>
-
-` 
-CardsDeccoHouse.append(div);
-
-
-})
-
-}) */
-
-
-
-
 /////////////////////////////////////////////////////////////////////////////////////////////
 //mostrar stock de productos DeccoHouse
 let CardsDeccoHouse = document.querySelector(`#CardsDeccoHouse`);
@@ -175,7 +144,7 @@ div.innerHTML =`
 <div class="card  divnor " style="width: 18rem; height: 350px">
   <img src="${item.img}" class="card-img-top" style="width: 17rem; height: 120px" alt="${item.id}">
   <div class="card-body">
-    <h5 class="card-title">${item.nombre}</h5>
+    <h3 class="card-title">${item.nombre}</h3>
   </div>
   <ul class="list-group  ">
     <li class="list-group-item divnor "> Precio ${item.precio}</li>
@@ -190,7 +159,7 @@ div.innerHTML =`
 ` 
 CardsDeccoHouse.append(div);
 let comprar =document.createElement("button");
-comprar.innerText = "agregar al carrito"
+comprar.innerText = "AGREGAR AL CARRITO"
 comprar.className = "botoncard"
 div.append(comprar);
 comprar.addEventListener("click",()=>{
@@ -237,7 +206,7 @@ div.innerHTML =`
 <div class="card  divnor " style="width: 18rem; height: 350px">
   <img src="${item.img}" class="card-img-top" style="width: 17rem; height: 120px" alt="${item.id}">
   <div class="card-body">
-    <h5 class="card-title">${item.nombre}</h5>
+    <h3 class="card-title">${item.nombre}</h3>
   </div>
   <ul class="list-group  ">
     <li class="list-group-item divnor "> Precio ${item.precio}</li>
@@ -300,7 +269,7 @@ div.innerHTML =`
 <div class="card  divnor " style="width: 18rem; height: 350px">
   <img src="${item.img}" class="card-img-top" style="width: 17rem; height: 120px" alt="${item.id}">
   <div class="card-body">
-    <h5 class="card-title">${item.nombre}</h5>
+    <h3 class="card-title">${item.nombre}</h3>
   </div>
   <ul class="list-group  ">
     <li class="list-group-item divnor "> Precio ${item.precio}</li>
@@ -365,7 +334,7 @@ div.innerHTML =`
 <div class="card  divnor " style="width: 18rem; height: 350px">
   <img src="${item.img}" class="card-img-top" style="width: 17rem; height: 120px" alt="${item.id}">
   <div class="card-body">
-    <h5 class="card-title">${item.nombre}</h5>
+    <h3 class="card-title">${item.nombre}</h3>
   </div>
   <ul class="list-group  ">
     <li class="list-group-item divnor "> Precio ${item.precio}</li>
