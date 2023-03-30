@@ -3,7 +3,7 @@
 ![](https://github.com/henryguajard/decohouse/blob/main/imagenes/img_README/Decco01.png)
 ![](https://github.com/henryguajard/decohouse/blob/main/imagenes/img_README/decco06.png)
 
-![](https://github.com/henryguajard/decohouse/blob/main/imagenes/img_README/deccomobile01.png) ![](https://github.com/henryguajard/decohouse/blob/main/imagenes/img_README/deccomobile01.png)
+![](https://github.com/henryguajard/decohouse/blob/main/imagenes/img_README/deccomobile01.png) ![](https://github.com/henryguajard/decohouse/blob/main/imagenes/img_README/deccomobile02.png)
 
 en este proyecto cree un ecommerce de venta de muebles, que sea dinamico y amigable con el usuario.
 En este e utilizado todo lo aprendido a lo largo de este :open_book: Bootcamp:
