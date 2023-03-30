@@ -27,9 +27,10 @@ function mensajeAgregadoHenry()  {
       title: 'Desarrollador Henry Guajardo!',
       text: ' visitame en github.com/henryguajard',
       imageUrl: 'https://lh3.googleusercontent.com/a/AGNmyxbLaJIZ0pQlTQJ-tQKA9WVsFAVuBdAe0H9EcCBakHE=s288',
-      imageWidth: 200,
-      imageHeight: 200,
+      imageWidth: 100,
+      imageHeight: 100,
       imageAlt: 'Custom image',
+      width:'40%'
     })
 
 

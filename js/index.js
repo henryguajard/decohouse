@@ -1,8 +1,9 @@
 function mensajeAgregadop(){
-    Swal.fire(
-        'Ven a visitar nuestra Tienda :D',
+    Swal.fire({
+       title: ' visita nuestra Tienda',
+        width:'40%'
         
-      );
+    });
 }
 
 setTimeout(() => {

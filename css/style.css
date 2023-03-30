@@ -151,6 +151,13 @@ h2 {
   right: 30px;
   bottom: 30px;
 }
+@media screen and (max-width: 576px) {
+  .fixed {
+    position: fixed;
+    right: 20px;
+    bottom: 70px;
+  }
+}
 
 .divnor {
   background: linear-gradient(90deg, #ac9ff8 0%, #bc3ccd 100%);
@@ -159,6 +166,11 @@ h2 {
 .norton {
   margin-left: 615px;
   background: linear-gradient(90deg, #ac9ff8 0%, #bc3ccd 100%);
+}
+@media screen and (max-width: 576px) {
+  .norton {
+    margin-left: 125px;
+  }
 }
 
 .btn:hover {

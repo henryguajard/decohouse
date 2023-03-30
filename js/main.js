@@ -12,10 +12,10 @@ localStorage.setItem("carrito",JSON.stringify(carrito));
 } 
 
 function mensajeAgregado(){
-    Swal.fire(
-        'Agregado al carrito :D',
-        
-      );}
+    Swal.fire({
+      title: 'Agregado al carrito :D',
+      width:'40%'  
+    });}
 
 
 

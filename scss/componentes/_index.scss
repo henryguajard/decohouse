@@ -142,13 +142,23 @@ height: 200px;
     position: fixed;
     right: 30px;
     bottom: 30px;
+    @include mediaquery{
+        position: fixed;
+        right: 20px;
+        bottom: 70px;  
+    }
 }
+
 .divnor{
     background: linear-gradient(90deg, #ac9ff8  0%,#bc3ccd   100%);  
 }
 .norton{ 
 margin-left: 615px;
     background: linear-gradient(90deg, #ac9ff8  0%, #bc3ccd   100%);
+    @include mediaquery{
+        margin-left: 125px;
+        
+    }
 }
 .btn:hover{
   background-color: #ac9ff8;
