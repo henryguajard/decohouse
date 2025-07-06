@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stock de Productos DH</title>
+  <link rel="icon" href="../imagenes/sofa.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="../index.ejs">
+          <img src="../imagenes/sofa.png" alt="Icono" width="50" height="50" class="me-2" />
+          <h1 class="h5 mb-0">DecoHouse</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOptions">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarOptions">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tienda</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Productos en Stock</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Conócenos</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./quienes.html">Quiénes somos</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart3 me-2" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2..."/>
+            </svg>
+            <span class="badge bg-secondary" id="icContarcarrito"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="container mt-5 pt-5">
+    <div class="text-center mb-4">
+      <h2>Conoce nuestros stock de productos</h2>
+      <h4>Filtros por:</h4>
+    </div>
+    <div class="row mb-5">
+      <div class="col-md-4 mb-3">
+        <div class="card border-danger h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">Exteriores</h5>
+            <button id="JuegosT" class="btn btn-outline-danger mt-2">Terrazas</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card border-dark h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">Mesas exclusivas</h5>
+            <button id="Mesas" class="btn btn-outline-dark mt-2">Mesas</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card border-dark h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">Lo que necesita tu living</h5>
+            <button id="Sofas" class="btn btn-outline-dark mt-2">Sofás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards productos -->
+    <div id="CardsDeccoHouse" class="row g-4"></div>
+    <div id="containerCarrito"></div>
+
+    <!-- Iconos info -->
+    <div class="row text-center mt-5">
+      <div class="col"><img src="../imagenes/mueble.png" width="80" height="80" alt="Hecho en Chile"></div>
+      <div class="col"><img src="../imagenes/trabajo-en-equipo.png" width="80" height="80" alt="Fabricado a mano"></div>
+      <div class="col"><img src="../imagenes/garantia.png" width="80" height="80" alt="12 Meses"></div>
+      <div class="col"><img src="../imagenes/entrega-urgente.png" width="80" height="80" alt="Despacho 48h"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light mt-5 py-4">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 mb-3">
+          <p>Buscanos en:</p>
+          <!-- iconos redes sociales (puedes usar Bootstrap Icons o FontAwesome si lo prefieres) -->
+        </div>
+        <div class="col-md-4 mb-3">
+          <p>Todos los derechos reservados © Henry Nicolas Guajardo Guajardo 2023</p>
+          <a href="#">Términos y condiciones</a>
+        </div>
+        <div class="col-md-4 mb-3">
+          <p>Política de cookies</p>
+          <p>Política de privacidad</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../js/productos.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/carrito.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

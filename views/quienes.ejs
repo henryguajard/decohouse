@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../imagenes/sofa.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Quienes somos DH</title>
+</head>
+<body>
+
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="ps-4">
+        <h1>DecoHouse</h1>
+      </div>
+      <div class="ps-3">
+        <a href="../index.ejs">
+          <img src="../img/sofa.png" height="55" width="80" alt="icono tottus">
+        </a>
+      </div>
+      <div class="container-fluid mt-5">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="opciones">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tienda</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../paginas/stock.html">Productos en Stock</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Conócenos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Quienes somos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mt-5 pt-5 text-center">
+    <h2>Quienes somos</h2>
+  </div>
+
+  <div class="container">
+    <div class="row" id="salida"></div>
+  </div>
+
+  <article class="container mt-5">
+    <div class="row text-center">
+      <div class="col">
+        <img src="../imagenes/mueble.png" height="100" width="100" alt="">
+      </div>
+      <div class="col">
+        <img src="../imagenes/trabajo-en-equipo.png" height="100" width="100" alt="">
+      </div>
+      <div class="col">
+        <img src="../imagenes/garantia.png" height="98" width="100" alt="">
+      </div>
+      <div class="col">
+        <img src="../imagenes/entrega-urgente.png" height="100" width="100" alt="">
+      </div>
+    </div>
+  </article>
+
+  <footer class="container-fluid mt-5">
+    <div class="row text-center">
+      <div class="col-sm-4 border-end">
+        <p>Buscanos en</p>
+        <ul class="list-unstyled d-flex justify-content-center gap-3">
+          <li><a href="https://es-la.facebook.com/" target="_blank"><i class="bi bi-facebook fs-4"></i></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram fs-4"></i></a></li>
+          <li><a href="https://twitter.com/?lang=es" target="_blank"><i class="bi bi-twitter fs-4"></i></a></li>
+          <li><a href="https://www.youtube.com/premium" target="_blank"><i class="bi bi-youtube fs-4"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <p>Todos Los derechos Reservados Henry Nicolas Guajardo Guajardo ©2023</p>
+        <p>Términos y condiciones</p>
+      </div>
+      <div class="col-sm-4 border-start">
+        <h4>Política de cookies</h4>
+        <h4>Política de privacidad</h4>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="https://cl.norton.com/" target="_blank">
+        <img src="https://images.falabella.com/v3/assets/blt7c5c2f2f888a7cc3/blt7a6d6b2fa47c3d34/6102dde661f38746a577ab06/norton-svg-rebranding-desktop.svg" height="78" width="92" alt="Norton">
+      </a>
+      <img src="../imagenes/github.png" height="60" width="60" alt="GitHub">
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../js/productos.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/conocenos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

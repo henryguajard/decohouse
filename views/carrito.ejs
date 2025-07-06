@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <h2>Tu carrito de compras</h2>
+
+  <% if (carrito.length === 0) { %>
+    <p>El carrito está vacío.</p>
+  <% } else { %>
+    <ul class="list-group mb-3">
+      <% carrito.forEach(p => { %>
+        <li class="list-group-item d-flex align-items-center">
+          <img src="/img/<%= p.imagen %>" alt="<%= p.nombre %>" width="80" class="me-3 rounded shadow-sm">
+          <div>
+            <strong><%= p.nombre %></strong><br>
+            <span class="text-success">$<%= p.precio %></span>
+          </div>
+        </li>
+      <% }) %>
+    </ul>
+
+    <form action="/carrito/vaciar" method="POST">
+      <button class="btn btn-danger">Vaciar carrito</button>
+    </form>
+  <% } %>
+</div>
+
+<%- include('partials/footer') %>

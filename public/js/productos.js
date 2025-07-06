@@ -10,15 +10,15 @@ class  productoDeccoHouse{
 }
 //array de objetos 
 const productosDeccoHouse =[
-{id : 01, nombre: `Terraza Sofia`,img : "../imagenes/terraza01.jpg", precio: 499990, cantidad: 1},
-{id : 02, nombre: `Terraza Alaya`,img : "../imagenes/terraza02.jpg" , precio: 599990, cantidad: 1},
-{id : 03, nombre: `Terraza Arrayan `,img : "../imagenes/terraza03.jpg" , precio: 699990, cantidad: 1},
-{id : 04, nombre: `Mesa bar TuHome`,img : "../imagenes/mesa01.jpeg" , precio: 1199990, cantidad: 1},
-{id : 05, nombre: `Mesa Amazonas `,img : "../imagenes/mesa02.jpg", precio: 1299990, cantidad: 1},
-{id : 06, nombre: `Mesa blue dark`,img : "../imagenes/mesa03.webp", precio: 1399990, cantidad: 1},
-{id : 07, nombre: `Sofa slow`,img : "../imagenes/sofa01.jpg", precio: 499990, cantidad: 1},
-{id : 08, nombre: `Sofa Kunza`,img : "../imagenes/sofa02.webp", precio: 399990, cantidad: 1},
-{id : 09, nombre: `Sofa Essential`,img : "../imagenes/sofa03.jpg", precio: 299990, cantidad: 1}
+{id : 1, nombre: `Terraza Sofia`,img : "../img/terraza01.jpg", precio: 499990, cantidad: 1},
+{id : 2, nombre: `Terraza Alaya`,img : "../img/terraza02.jpg" , precio: 599990, cantidad: 1},
+{id : 3, nombre: `Terraza Arrayan `,img : "../img/terraza03.jpg" , precio: 699990, cantidad: 1},
+{id : 4, nombre: `Mesa bar TuHome`,img : "../img/mesa01.jpeg" , precio: 1199990, cantidad: 1},
+{id : 5, nombre: `Mesa Amazonas `,img : "../img/mesa02.jpg", precio: 1299990, cantidad: 1},
+{id : 6, nombre: `Mesa blue dark`,img : "../ig/mesa03.webp", precio: 1399990, cantidad: 1},
+{id : 7, nombre: `Sofa slow`,img : "../img/sofa01.jpg", precio: 499990, cantidad: 1},
+{id : 8, nombre: `Sofa Kunza`,img : "../img/sofa02.webp", precio: 399990, cantidad: 1},
+{id : 9, nombre: `Sofa Essential`,img : "../img/sofa03.jpg", precio: 299990, cantidad: 1}
 ];
 
 
