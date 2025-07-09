@@ -1,9 +1,10 @@
 {
   "name": "decohouse",
   "version": "1.0.0",
-  "description": "![](https://github.com/henryguajard/decohouse/blob/main/imagenes/img_README/Decco01.png)\r ![](https://github.com/henryguajard/decohouse/blob/main/imagenes/img_README/decco06.png)",
-  "main": "index.js",
+  "description": "Decoración de interiores",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
