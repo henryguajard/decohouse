@@ -2,17 +2,18 @@
 
 
 <%- include('partials/header') %>
-<section class="container-fluid mt-5">
-  <div class="row justify-content-center">
-    <div class="col-sm-4 mt-5">
-      <h3>Diseñamos tus muebles 100% <br>A tu medida</h3>
+<section class="container-fluid py-5">
+  <div class="row align-items-center">
+    <div class="col-lg-5 text-center text-lg-start mb-4 mb-lg-0">
+      <h3 class="fw-bold">Diseñamos tus muebles 100%<br>a tu medida</h3>
       <div id="timeout"></div>
     </div>
-    <div class="col-sm-8">
-      <img src="./img/decoracion-sillones.jpg" width="800" class="img-fluid" alt="">
+    <div class="col-lg-7">
+      <img src="./img/decoracion-sillones.jpg" class="img-fluid rounded shadow" alt="Decoración sillones">
     </div>
   </div>
 </section>
+
 
 <div class="container mt-5">
   <h2 class="mb-4">Productos Destacados</h2>
@@ -36,25 +37,32 @@
   </div>
 </div>
 
-<section class="container-fluid mt-5">
-  <div class="row">
-    <div class="col-sm-4 border">
-      <h3>Terrazas</h3>
-      <p>Centralizamos la compra y gestionamos venta de volumen simplificando tu logística de compra.</p>
-      <a href="./pages/stock.html" class="btn btn-outline-primary mt-3">Conócelos aquí</a>
+<section class="container py-5">
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="border rounded p-4 h-100 shadow-sm text-center">
+        <h3 class="mb-3">Terrazas</h3>
+        <p>Centralizamos la compra y gestionamos venta de volumen simplificando tu logística de compra.</p>
+        <a href="/productos" class="btn btn-outline-primary mt-3 w-100">Conócelos aquí</a>
+      </div>
     </div>
-    <div class="col-sm-4 border">
-      <h3>Mesas</h3>
-      <p>Nos sentimos orgullosos del trabajo artesanal y manual que hay detrás de cada producto.</p>
-      <a href="./productos.ejs" class="btn btn-outline-primary mt-3">Conócelos aquí</a>
+    <div class="col-md-4">
+      <div class="border rounded p-4 h-100 shadow-sm text-center">
+        <h3 class="mb-3">Mesas</h3>
+        <p>Nos sentimos orgullosos del trabajo artesanal y manual que hay detrás de cada producto.</p>
+        <a href="/productos" class="btn btn-outline-primary mt-3 w-100">Conócelos aquí</a>
+      </div>
     </div>
-    <div class="col-sm-4 border">
-      <h3>Sofás</h3>
-      <p>Cada mueble es elaborado con pasión y destreza para crear algo único.</p>
-      <a href="./pages/stock.html" class="btn btn-outline-primary mt-3">Conócelos aquí</a>
+    <div class="col-md-4">
+      <div class="border rounded p-4 h-100 shadow-sm text-center">
+        <h3 class="mb-3">Sofás</h3>
+        <p>Cada mueble es elaborado con pasión y destreza para crear algo único.</p>
+        <a href="/productos" class="btn btn-outline-primary mt-3 w-100">Conócelos aquí</a>
+      </div>
     </div>
   </div>
 </section>
+
 
 <div class="container mt-5">
   <h2>Conoce nuestros productos</h2>
@@ -63,36 +71,22 @@
 <article class="container-fluid mt-4">
   <div class="row">
     <div class="col-sm-4">
-      <img src="./img/SIENA3CPACERO_5_1024x1024.webp" class="img-fluid mb-2" alt="">
-      <img src="./img/sofa01.jpg" class="img-fluid mb-2" alt="">
+      <img src="./img/SIENA3CPACERO_5_1024x1024.webp" class="img-fixed-size mb-2" alt="">
+      <img src="./img/sofa01.jpg" class="img-fixed-size mb-2" alt="">
     </div>
     <div class="col-sm-4">
-      <img src="./img/mesa01.jpeg" class="img-fluid mb-2" alt="">
-      <img src="./img/mesa02.jpg" class="img-fluid mb-2" alt="">
+      <img src="./img/mesa01.jpeg" class="img-fixed-size mb-2" alt="">
+      <img src="./img/mesa02.jpg" class="img-fixed-size mb-2" alt="">
     </div>
     <div class="col-sm-4">
-      <img src="./img/slide_2.jpg" class="img-fluid mb-2" alt="">
-      <img src="./img/terraza01.jpg" class="img-fluid mb-2" alt="">
+      <img src="./img/slide_2.jpg" class="img-fixed-size mb-2" alt="">
+      <img src="./img/terraza01.jpg" class="img-fixed-size mb-2" alt="">
     </div>
   </div>
 </article>
 
-<article class="container-fluid mt-4">
-  <div class="row text-center">
-    <div class="col">
-      <img src="./img/mueble.png" height="100" width="100" alt="">
-    </div>
-    <div class="col">
-      <img src="./img/trabajo-en-equipo.png" height="100" width="100" alt="">
-    </div>
-    <div class="col">
-      <img src="./img/garantia.png" height="98" width="100" alt="">
-    </div>
-    <div class="col">
-      <img src="./img/entrega-urgente.png" height="100" width="100" alt="">
-    </div>
-  </div>
-</article>
+
+
 
 <%- include('partials/footer') %>
 

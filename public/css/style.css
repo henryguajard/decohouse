@@ -3,3 +3,9 @@
     height: 200px;
     width: 100%;
   }
+
+  .img-fixed-size {
+  width: 100%;
+  height: 200px; /* Ajusta a la altura que desees */
+  object-fit: cover; /* Corta y mantiene proporción */
+}
