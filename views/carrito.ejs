@@ -7,22 +7,48 @@
     <p>El carrito está vacío.</p>
   <% } else { %>
     <ul class="list-group mb-3">
-      <% carrito.forEach(p => { %>
-        <li class="list-group-item d-flex align-items-center">
-          <img src="/img/<%= p.imagen %>" alt="<%= p.nombre %>" width="80" class="me-3 rounded shadow-sm">
-          <div>
-            <strong><%= p.nombre %></strong><br>
-            <span class="text-success">$<%= p.precio %></span>
+      <% let total = 0; %>
+      <% carrito.forEach(p => {
+          const subtotal = p.precio * p.cantidad;
+          total += subtotal;
+      %>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center">
+            <img src="/img/<%= p.imagen %>" alt="<%= p.nombre %>" width="80" class="me-3 rounded shadow-sm">
+            <div>
+              <strong><%= p.nombre %></strong><br>
+              <span class="text-success">$<%= p.precio %></span><br>
+
+              <div class="d-flex align-items-center mt-1">
+                <form action="/carrito/disminuir" method="POST" class="me-2">
+                  <input type="hidden" name="productoId" value="<%= p._id %>">
+                  <button class="btn btn-sm btn-outline-secondary" title="Disminuir cantidad">−</button>
+                </form>
+
+                <span><%= p.cantidad %></span>
+
+                <form action="/carrito/aumentar" method="POST" class="ms-2">
+                  <input type="hidden" name="productoId" value="<%= p._id %>">
+                  <button class="btn btn-sm btn-outline-secondary" title="Aumentar cantidad">+</button>
+                </form>
+              </div>
+
+              <span class="d-block mt-1">Subtotal: $<%= subtotal %></span>
+            </div>
           </div>
         </li>
       <% }) %>
     </ul>
 
-    <form action="/carrito/vaciar" method="POST">
+    <div class="mb-3">
+      <h4>Total: $<%= total %></h4>
+    </div>
+
+    <form action="/carrito/vaciar" method="POST" class="d-inline">
       <button class="btn btn-danger">Vaciar carrito</button>
     </form>
-  
-    <button class="btn btn-primary">Pagar</button>
+
+    <button class="btn btn-primary ms-2">Pagar</button>
   <% } %>
 </div>
 

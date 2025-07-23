@@ -12,15 +12,16 @@
           <h5 class="card-title"><%= producto.nombre %></h5>
           <p class="card-text"><%= producto.descripcion %></p>
           <p class="card-text text-success fw-bold">$<%= producto.precio %></p>
-          <p class="card-text text-muted">Stock: <%= producto.stock %></p>
+          
         </div>
-      </div>
-    </a>
-    <!-- Botón fuera del enlace para que no se active al hacer clic en él -->
+ <!-- Botón fuera del enlace para que no se active al hacer clic en él -->
     <form action="/carrito/agregar" method="POST" class="mt-2">
       <input type="hidden" name="productoId" value="<%= producto._id %>">
       <button class="btn btn-primary w-100" type="submit">Agregar al carrito</button>
     </form>
+      </div>
+    </a>
+   
   </div>
       <% }) %>
     </div>

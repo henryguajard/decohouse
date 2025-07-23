@@ -11,9 +11,9 @@
       <p><strong>Descripción:</strong></p>
       <p><%= producto.descripcion %></p>
 
-      <form action="/agregar-al-carrito" method="POST">
+      <form action="/carrito/agregar" method="POST">
         <input type="hidden" name="productoId" value="<%= producto._id %>">
-        <button type="submit" class="btn btn-primary">Agregar al carrito</button>
+        <button type="submit" class="w-100 w-sm-auto btn  btn-primary">Agregar al carrito</button>
       </form>
     </div>
   </div>

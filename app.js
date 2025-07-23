@@ -17,6 +17,16 @@ app.use(session({
   saveUninitialized: true
 }));
 
+app.use((req, res, next) => {
+  // Calculamos la cantidad total de productos del carrito
+  const carrito = req.session.carrito || [];
+  const totalProductos = carrito.reduce((total, item) => total + item.cantidad, 0);
+
+  // Lo dejamos disponible en todas las vistas
+  res.locals.totalProductosCarrito = totalProductos;
+  next();
+});
+
 // Middleware para archivos estáticos
 app.use(express.static(path.join(__dirname, 'public')));
 
