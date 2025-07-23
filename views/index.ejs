@@ -20,19 +20,23 @@
   <div class="row">
     <% productos.forEach(producto => { %>
       <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="/img/<%= producto.imagen %>" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title"><%= producto.nombre %></h5>
-            <p class="card-text"><%= producto.descripcion %></p>
-            <p class="card-text text-success fw-bold">$<%= producto.precio %></p>
-            <form action="/carrito/agregar" method="POST">
-              <input type="hidden" name="productoId" value="<%= producto._id %>">
-              <button class="btn btn-primary w-100" type="submit">Agregar al carrito</button>
-            </form>
-          </div>
-        </div>
+  <a href="/productos/producto/<%= producto._id %>" class="text-decoration-none text-dark">
+    <div class="card h-100">
+      <img src="/img/<%= producto.imagen %>" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title"><%= producto.nombre %></h5>
+        <p class="card-text"><%= producto.descripcion %></p>
+        <p class="card-text text-success fw-bold">$<%= producto.precio %></p>
       </div>
+    </div>
+  </a>
+
+  <!-- Botón fuera del <a> para que siga funcionando -->
+  <form action="/carrito/agregar" method="POST" class="mt-2">
+    <input type="hidden" name="productoId" value="<%= producto._id %>">
+    <button class="btn btn-primary w-100" type="submit">Agregar al carrito</button>
+  </form>
+</div>
     <% }) %>
   </div>
 </div>

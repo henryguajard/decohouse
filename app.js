@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
 const session = require('express-session');
+require('dotenv').config(); // 
 
 const productosRoutes = require('./routes/productos');
 const carritoRoutes = require('./routes/carrito');
@@ -25,6 +26,8 @@ app.use(express.urlencoded({ extended: true }));
 // Configurar EJS
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+
+
 
 // Ruta principal
 app.get('/', async (req, res) => {
