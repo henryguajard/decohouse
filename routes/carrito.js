@@ -25,6 +25,7 @@ router.get('/producto/:id', async (req, res) => {
 // Agregar al carrito
 router.post('/agregar', async (req, res) => {
   const productoId = req.body.productoId;
+  const cantidad = parseInt(req.body.cantidad) || 1; 
 
   try {
     const producto = await Producto.findById(productoId);
@@ -37,16 +38,16 @@ router.post('/agregar', async (req, res) => {
     const index = req.session.carrito.findIndex(item => item._id == productoId);
 
     if (index >= 0) {
-      // Si ya existe, incrementar la cantidad
-      req.session.carrito[index].cantidad += 1;
+      // Si ya existe, sumar la cantidad seleccionada
+      req.session.carrito[index].cantidad += cantidad;
     } else {
-      // Si no existe, agregarlo con cantidad 1
+      // Si no existe, agregarlo con la cantidad seleccionada
       req.session.carrito.push({
         _id: producto._id,
         nombre: producto.nombre,
         precio: producto.precio,
         imagen: producto.imagen, // si usas imagen
-        cantidad: 1
+        cantidad: cantidad
       });
     }
 
@@ -56,6 +57,7 @@ router.post('/agregar', async (req, res) => {
     res.status(500).send('Error al agregar producto');
   }
 });
+
 
 
 // Vaciar carrito (opcional)

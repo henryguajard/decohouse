@@ -11,12 +11,46 @@
       <p><strong>Descripción:</strong></p>
       <p><%= producto.descripcion %></p>
 
-      <form action="/carrito/agregar" method="POST">
+      <form action="/carrito/agregar" method="POST" class="d-flex align-items-center gap-2">
         <input type="hidden" name="productoId" value="<%= producto._id %>">
-        <button type="submit" class="w-100 w-sm-auto btn  btn-primary">Agregar al carrito</button>
+
+        <!-- Botón - -->
+        <button type="button" class="btn btn-outline-secondary" id="btnRestar">-</button>
+
+        <!-- Campo cantidad -->
+        <input 
+          type="number" 
+          name="cantidad" 
+          id="cantidad" 
+          value="1" 
+          min="1" 
+          class="form-control text-center" 
+          style="width: 70px;"
+        >
+
+        <!-- Botón + -->
+        <button type="button" class="btn btn-outline-secondary" id="btnSumar">+</button>
+
+        <!-- Botón enviar -->
+        <button type="submit" class="btn btn-outline-dark w-100">Agregar al carrito</button>
       </form>
     </div>
   </div>
 </div>
+
+<script>
+  // Script para manejar los botones + y -
+  document.getElementById("btnSumar").addEventListener("click", () => {
+    let input = document.getElementById("cantidad");
+    input.value = parseInt(input.value) + 1;
+  });
+
+  document.getElementById("btnRestar").addEventListener("click", () => {
+    let input = document.getElementById("cantidad");
+    if (parseInt(input.value) > 1) {
+      input.value = parseInt(input.value) - 1;
+    }
+  });
+</script>
 
 <%- include('partials/footer') %>

@@ -1,29 +1,29 @@
 <%- include('partials/header') %>
-  <div class="container py-5">
-    <h1 class="mb-4">Catálogo de Productos</h1>
-    <div class="row">
-      <% productos.forEach(producto => { %>
-        <div class="col-md-4 mb-4">
-    <a href="/productos/producto/<%= producto._id %>" class="text-decoration-none text-dark">
-      <div class="card h-100">
-        <img src="/img/<%= producto.imagen %>" class="card-img-top" alt="<%= producto.nombre %>">
-        <div class="card-body">
-          <h5 class="card-title"><%= producto.categoria %></h5>
-          <h5 class="card-title"><%= producto.nombre %></h5>
-          <p class="card-text"><%= producto.descripcion %></p>
-          <p class="card-text text-success fw-bold">$<%= producto.precio %></p>
-          
-        </div>
- <!-- Botón fuera del enlace para que no se active al hacer clic en él -->
-    <form action="/carrito/agregar" method="POST" class="mt-2">
-      <input type="hidden" name="productoId" value="<%= producto._id %>">
-      <button class="btn btn-primary w-100" type="submit">Agregar al carrito</button>
-    </form>
+ <div class="container  mt-4">
+  <h1 class="mb-4">Catálogo de Productos</h1>
+  <div class="row">
+    <% productos.forEach(producto => { %>
+      <div class="col-md-4 mb-5">
+        <a href="/productos/producto/<%= producto._id %>" class="text-decoration-none text-dark">
+          <div class="card h-100">
+            <img src="/img/<%= producto.imagen %>" class="card-img-top" alt="<%= producto.nombre %>">
+            <div class="card-body">
+              <h5 class="card-title"><%= producto.categoria %></h5>
+              <h5 class="card-title"><%= producto.nombre %></h5>
+              <p class="card-text"><%= producto.descripcion %></p>
+              <p class="card-text text-dark fw-bold">$<%= producto.precio %></p>
+            </div>
+          </div>
+        </a>
+        <!-- Botón fuera del enlace -->
+        <form action="/carrito/agregar" method="POST" class="mt-2">
+          <input type="hidden" name="productoId" value="<%= producto._id %>">
+          <button class="btn btn-outline-dark w-100" type="submit">Agregar al carrito</button>
+        </form>
       </div>
-    </a>
-   
+    <% }) %>
   </div>
-      <% }) %>
-    </div>
-  </div>
+</div>
+
+
 <%- include('partials/footer') %>

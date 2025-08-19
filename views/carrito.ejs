@@ -45,10 +45,13 @@
     </div>
 
     <form action="/carrito/vaciar" method="POST" class="d-inline">
-      <button class="btn btn-danger">Vaciar carrito</button>
+      <button class="btn btn-outline-dark w-40">Vaciar carrito</button>
     </form>
 
-    <button class="btn btn-primary ms-2">Pagar</button>
+    
+    <form action="/checkout" method="POST" class="d-inline">
+      <button type="submit" class="btn btn-outline-dark w-40">Pagar</button>
+    </form>
   <% } %>
 </div>
 
