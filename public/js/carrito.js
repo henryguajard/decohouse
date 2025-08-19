@@ -23,7 +23,7 @@ const guardarStorage = () => {
   localStorage.setItem("carrito", JSON.stringify(carrito));
 };
 
-// ✅ Opcional: función para cargar desde localStorage (si quieres usarla luego)
+
 const cargarCarrito = () => {
   carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 };
@@ -109,14 +109,14 @@ function agregarAlCarrito(producto) {
     carrito.push({ ...producto, cantidad: 1 });
   }
 
-  guardarStorage();   // Actualiza localStorage
-  numeroCarrito();    // Actualiza el contador del icono
+  guardarStorage();  
+  numeroCarrito();    
 }
 
 const contenedorVistaCarrito = document.querySelector("#contenidoCarrito");
 
 const renderVistaCarrito = () => {
-  // ❌ Ya no llama a cargarCarrito porque no es necesaria
+ 
 
   if (!contenedorVistaCarrito) return;
 

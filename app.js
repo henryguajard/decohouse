@@ -62,7 +62,7 @@ app.post('/checkout', async (req, res) => {
       price_data: {
         currency: "clp",
         product_data: { name: item.nombre },
-        unit_amount: item.precio, // convertir a centavos
+        unit_amount: item.precio, 
       },
       quantity: item.cantidad,
     }));
