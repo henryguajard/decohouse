@@ -52,6 +52,13 @@ app.get('/', async (req, res) => {
 app.use('/productos', productosRoutes);
 app.use('/carrito', carritoRoutes);
 
+
+
+// Ruta para la vista "quienes"
+app.get('/quienes', (req, res) => {
+  res.render('quienes', { titulo: '¿Quiénes Somos?' }); 
+});
+
 // Ruta de checkout con Stripe
 app.post('/checkout', async (req, res) => {
   try {
