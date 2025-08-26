@@ -1,7 +1,7 @@
 <%- include('partials/header') %>
 <section class="container-fluid py-5">
   <div class="row align-items-center">
-    <div class="col-lg-5 text-center text-lg-start mb-4 mb-lg-0">
+    <div class="col-lg-5 text-center text-lg-start mb-4 mb-lg-0 border rounded p-4 h-100 shadow-sm">
       <h3 class="fw-bold">Diseñamos tus muebles 100%<br>a tu medida</h3>
       <div id="timeout"></div>
     </div>
@@ -12,8 +12,9 @@
 </section>
 
 
-<div class="container mt-5">
-  <h2 class="mb-4">Productos Destacados</h2>
+<div class="container mt-5 ">
+  <div class=""> <h2 class="mb-4">Productos Destacados</h2></div>
+ 
   <div class="row">
     <% productos.forEach(producto => { %>
       <div class="col-md-4 mb-4">
@@ -23,7 +24,7 @@
       <div class="card-body">
         <h5 class="card-title"><%= producto.nombre %></h5>
         <p class="card-text"><%= producto.descripcion %></p>
-        <p class="card-text text-success fw-bold">$<%= producto.precio %></p>
+        <p class="card-text text-dark fw-bold">$<%= producto.precio %></p>
       </div>
        <form action="/carrito/agregar" method="POST" class="mt-2">
    

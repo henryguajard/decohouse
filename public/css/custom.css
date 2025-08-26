@@ -1,25 +1,33 @@
-.card-img-top {
+/* ====== BASE ORIGINAL (NEGRO COMO PREDOMINANTE) ====== */
+.card-img-top { 
   object-fit: cover;
   height: 200px;
   width: 100%;
 }
 
 .card {
-  border: transparent; /* Sin borde por defecto */
+  border: transparent; 
   border-radius: 0.375rem;
-
+  transition: all 0.3s ease-in-out;
 }
 
 .card:hover {
-  border: 1px solid #343a40; /* Borde negro al pasar el mouse */
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Sombra más pronunciada */
- 
+  border: 1px solid #343a40; 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
+  transform: translateY(-5px);
 }
 
 .img-fixed-size {
   width: 100%;
-  height: 150px; /* Ajusta a la altura que desees */
-  object-fit: cover; /* Corta y mantiene proporción */
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .img-fixed-size {
+  transform: scale(1.05); 
 }
 
 .card-body {
@@ -27,22 +35,110 @@
 }
 
 .card-title {
-  font-size: 1.125rem;
-  font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #212529;
+  transition: color 0.2s ease-in-out;
+}
+
+.card:hover .card-title {
+  color: #000; 
 }
 
 .card-text {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   color: #6c757d;
+  line-height: 1.4;
 }
 
+/* ====== BOTONES EN NEGRO ====== */
 .card-body .btn {
+  background-color: #000; /* Negro sólido */
+  color: #fff;
   text-transform: uppercase;
   font-weight: 600;
- 
   border-radius: 0.375rem;
   padding: 0.5rem 1rem;
- 
+  border: 2px solid #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-body .btn:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* ====== BADGES EN NEGRO ====== */
+.badge-custom {
+  background: #000;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35em 0.65em;
+  border-radius: 0.25rem;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* ====== NAVBAR EN NEGRO ====== */
+
+
+.navbar .nav-link {
+  color: #000;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
 }
 
 
+.navbar .nav-link:hover {
+  color: #000; /* negro intenso */
+}
+
+
+.navbar .nav-link.active,
+.navbar .show > .nav-link {
+  background-color: transparent !important; 
+  color: #000 !important; 
+  border-bottom: 2px solid #000; 
+}
+
+/* Dropdown items */
+.dropdown-menu .dropdown-item {
+  font-weight: 500;
+  color: #212529;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #000; /* gris claro */
+  color: #fff ;
+}
+
+.dropdown-menu .dropdown-item.active {
+  background-color: #000 !important; /* fondo negro */
+  color: #fff !important; /* texto blanco */
+}
+
+/* Ajuste general (desktop/tablet) */
+.badge-counter {
+  top: 0;
+  left: 100%; /* por defecto en la esquina superior derecha */
+  transform: translate(-50%, -50%);
+}
+
+/* Ajuste solo en móviles (pantallas <= 576px) */
+@media (max-width: 576px) {
+  .badge-counter {
+    top: 0;         /* lo dejamos arriba */
+    left: 25%;      /* lo acercamos más al centro para que no se "vaya" al borde */
+    transform: translate(-50%, -50%);
+  }
+}

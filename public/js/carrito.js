@@ -132,7 +132,7 @@ const renderVistaCarrito = () => {
         <img src="${p.img}" alt="${p.nombre}" width="80" class="me-3 rounded shadow-sm">
         <div>
           <strong>${p.nombre}</strong><br>
-          <span class="text-success">$${p.precio}</span><br>
+          <span class="text-black">$${p.precio}</span><br>
           <span>Cantidad: ${p.cantidad}</span>
         </div>
       </li>
@@ -159,5 +159,5 @@ const renderVistaCarrito = () => {
 
 // Ejecutar si está en la vista de carrito
 document.addEventListener("DOMContentLoaded", () => {
-  renderVistaCarrito(); // si estamos en esa vista
+  renderVistaCarrito(); // 
 });
