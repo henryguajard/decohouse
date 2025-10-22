@@ -1,4 +1,4 @@
-/* ====== BASE ORIGINAL (NEGRO COMO PREDOMINANTE) ====== */
+
 .card-img-top { 
   object-fit: cover;
   height: 200px;
@@ -88,10 +88,6 @@
     font-size: 0.8rem;
   }
 }
-
-/* ====== NAVBAR EN NEGRO ====== */
-
-
 .navbar .nav-link {
   color: #000;
   font-weight: 600;
@@ -100,7 +96,7 @@
 
 
 .navbar .nav-link:hover {
-  color: #000; /* negro intenso */
+  color: #000; 
 }
 
 
@@ -118,27 +114,27 @@
 }
 
 .dropdown-menu .dropdown-item:hover {
-  background-color: #000; /* gris claro */
+  background-color: #000; 
   color: #fff ;
 }
 
 .dropdown-menu .dropdown-item.active {
-  background-color: #000 !important; /* fondo negro */
-  color: #fff !important; /* texto blanco */
+  background-color: #000 !important; 
+  color: #fff !important; 
 }
 
-/* Ajuste general (desktop/tablet) */
+/* (desktop/tablet) */
 .badge-counter {
   top: 0;
-  left: 100%; /* por defecto en la esquina superior derecha */
+  left: 100%; 
   transform: translate(-50%, -50%);
 }
 
 /* Ajuste solo en móviles (pantallas <= 576px) */
 @media (max-width: 576px) {
   .badge-counter {
-    top: 0;         /* lo dejamos arriba */
-    left: 25%;      /* lo acercamos más al centro para que no se "vaya" al borde */
+    top: 0;         
+    left: 25%;      
     transform: translate(-50%, -50%);
   }
 }
